@@ -1,0 +1,259 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$PATH:$HOME/bin:/usr/local/bin
+
+#export GOROOT=/usr/local/go
+
+#export GOPATH=$GOROOT/go
+
+#export GOBIN=$HOME/go/bin
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/.npm/bin
+export PATH=$PATH:/c/Program\ Files\ \(x86\)/Google/Chrome/Application
+export PATH=$PATH:/usr/bin/node
+export PATH=$PATH:/c/Program\ Files/Oracle/VirtualBox
+export PATH=$PATH:$HOME/.cargo/bin
+#export PATH=$PATH:$HOME/.cargo/bin:/mnt/c/Users/chris/local-code/flutter/bin
+export PATH=$PATH:$HOME/anaconda3/bin
+#export PATH=$PATH:$HOME/Projects/flutter/bin
+export PATH=$PATH:/c/Program\ Files/Perforce
+export PATH=$PATH:/usr/local/cuda-11.2/bin${PATH:+:${PATH}}
+export PATH=$PATH:$HOME/.npm-global/bin:$PATH
+
+export DENO_INSTALL="/home/cboyle/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+export WolframKernel=/c/Program\ Files/Wolfram\ Research/Wolfram\ Engine/12.0/WolframKernel.exe
+
+export PYTHONPATH=/home/cboyle/.local/lib/python3.8/site-packages:$PYTHONPATH
+
+# Path to your oh-my-zsh installation.
+export LD_LIBRARY_PATH='/c/Program\ Files/NVIDIA\ GPU\ Computing\ Toolkit/CUDA/v10.2/'
+
+export ZSH="/home/cboyle/.oh-my-zsh"
+
+export GPG_TTY=$(tty)
+
+#export DISPLAY=127.0.0.1:1.0
+
+export DISPLAY=:0
+
+#export DISPLAY=localhost:0.0
+
+export XDG_RUNTIME_DIR=/tmp/runtime-cboyle
+
+export DOCKER_HOST=tcp://localhost:2375
+
+export FLASK_APP="/c/Users/chris/Desktop/homer/app.py"
+
+export TZ='America/Chicago'
+
+export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS='1'
+
+export OPEN_SOURCE_CONTRIBUTOR=true
+export ADBLOCK=true
+export DISABLE_OPENCOLLECTIVE=true
+
+export NPM_CONFIG_USER=root
+
+#export VAGRANT_WSL_WINDOWS_ACCESS_USER_HOME_PATH='/home/cboyle'
+
+#email-provider-miner env variables
+
+# set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="agnoster"
+
+export ANDROID_HOME="/c/Users/chris/AppData/local/Android/Sdk"
+export ANDROID_SDK="/c/Users/chris/AppData/local/Android/Sdk"
+export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$PATH
+
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking uin ~/.oh-my-zsh/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insuensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=true
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git zsh-completions zsh-autosuggestions zsh-syntax-highlighting)
+
+autoload -U compinit && compinit
+
+fpath=(~/.oh-my-zsh/custom/plugins/zsh-completions/src $fpath)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias st='git status'
+alias dsf='git dsf'
+#alias serve='python -m SimpleHTTPServer'
+alias android='cd /c/Users/chris/local-code/scrcpy-win64-v1.10; ./scrcpy.exe -m 1024;'
+alias emu='cd $ANDROID_HOME/tools; sudo ./emulator.exe -avd Pixel_3a_XL_API_29'
+alias dt='cd /c/Users/chris/Desktop'
+alias gc='git clone'
+alias d='ddgr'
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+alias open='xdg-open'
+alias g='$GOPATH/bin/g'
+alias syn='synonym'
+alias gibson="gpg -r mail@christianboyle.com --encrypt --sign --armor"
+alias ungibson="gpg --decrypt"
+alias directories='ls -l | grep "^d" | wc -l'
+alias directories-recursive='ls -lR | grep "^d" | wc -l'
+alias gc='git clone'
+alias android-emulator='emulator.exe @Pixel_3a_XL_API_29 -dns-server 8.8.8.8'
+alias html5='create-html5-boilerplate new-site'
+alias yt='youtube-dl -f mp4' 
+#alias nyt='php /usr/local/bin/nyt-front-page.php'
+alias testgpg='echo "test" | gpg --clearsign'
+#alias python3='/usr/bin/python3.9'
+#alias twint='docker run -ti --rm -v $(pwd)/data:/opt/app/data x0rzkov/twint:latest'
+#alias twint='docker run --rm -it -v "$PWD:/root/output" twint'
+#alias twint='docker run -ti --rm christianboyle/twint:latest -h'
+alias twint='docker run --rm -it -v "$PWD:/root/output" christianboyle/twint:latest'
+
+#nyt () {
+#    php /usr/local/bin/nyt-front-page.php &&
+#    sleep 1
+#    "chrome.exe" "C:/Users/chris/Desktop/nyt.pdf" &&
+#    sleep 1
+#    cd /c/Users/chris/Desktop &&
+#    "rm" nyt.pdf && 
+#    exit 
+#}
+
+ghunt () {
+    cd ~/Projects/GHunt; python3 hunt.py "$1"; cd -
+}
+
+ghuntGen() {
+    cd ~/Projects/GHunt; python3 check_and_gen.py; cd -
+}
+
+rdb () {
+    node ~/Projects/javascript-webscraping/project-5/index.js url="$1"
+}
+
+sha256 () {
+    echo -n "$1" | shasum -a 256
+}
+
+np () {
+    node ~/Projects/modern-javascript-from-novice-to-ninja/nextPrime.js num="$1"
+}
+
+zshaddhistory() {
+	echo "${1%%$'\n'}|${PWD}   " >> ~/.zsh_history_ext
+}
+
+# Enable 256 colors
+[[ "$TERM" == "xterm" ]] && export TERM=xterm-256color
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+export GOPATH="$HOME/go"; export GOROOT="$HOME/.go"; export PATH="$GOPATH/bin:$PATH"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
+
+source /home/cboyle/.config/broot/launcher/bash/br
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/cboyle/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/cboyle/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/cboyle/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/cboyle/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval "$(starship init zsh)"
+alias tv='tidy-viewer'
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
